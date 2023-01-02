@@ -34,3 +34,13 @@ Visual Studio Code
 </pre>
 
 <br>
+
+## EER Diagram
+![image](https://user-images.githubusercontent.com/88774870/210203501-09fa398e-41b0-44db-a879-4388a74bd20b.png)
+
+<br>
+
+## Relational Schema
+![image](https://user-images.githubusercontent.com/88774870/210203616-4ea458d3-42a6-4310-a1a4-eb0258bab68c.png)
+
+<br>
