@@ -58,7 +58,7 @@ router.post('/', async (req, res) => { // 차량 정보 등록 버튼 클릭 시
         await insertSql.insertVan(data); // 입력된 정보를 Van table에 삽입 (Car table에 대한 서브 클래스)
     }
 
-    res.send("<script>alert('차량이 등록되었습니다.'); location.href='/car_enter_admin';</script>");
+    res.send("<script>alert('차량이 등록되었습니다.'); location.href='/car_enter_admin';</script>"); 
 });
 
 module.exports = router;

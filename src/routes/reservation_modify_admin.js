@@ -41,7 +41,7 @@ router.post('/', async (req, res) => { // 구매 예약 차량 정보 수정 버
     
     await updateSql.updateReservation(data); // 해당 data로 예약 table 수정
 
-    res.send("<script>alert('예약 정보가 수정되었습니다.'); location.href='/reservation_modify_admin';</script>");
+    res.send("<script>alert('예약 정보가 수정되었습니다.'); location.href='/reservation_modify_admin';</script>"); 
 });
 
 module.exports = router;

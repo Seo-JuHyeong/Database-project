@@ -13,7 +13,7 @@ router.post('/', async (req, res) => { // 구매 예약 차량 예약 삭제 버
 
     await deleteSql.deleteReservation(data); // 해당 차대 번호의 차량을 예약 table에서 삭제
 
-    res.send("<script>alert('예약이 취소되었습니다.'); location.href='/reservation_accept_admin';</script>");
+    res.send("<script>alert('예약이 취소되었습니다.'); location.href='/reservation_accept_admin';</script>"); 
 });
 
 module.exports = router;
