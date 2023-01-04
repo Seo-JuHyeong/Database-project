@@ -49,7 +49,7 @@ router.post('/', async (req, res) => { // 구매 예약 차량 거래 승인 버
     
     await insertSql.insertSale(data); // 입력된 정보로 Sale table에 등록
 
-    res.redirect('/reservation_accept_admin');
+    res.send("<script>alert('거래가 승인되었습니다.'); location.href='/reservation_accept_admin';</script>");
 });
 
 module.exports = router;

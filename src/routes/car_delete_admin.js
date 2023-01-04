@@ -61,7 +61,7 @@ router.post('/', async (req, res) => { // 차량 정보 삭제 버튼 클릭 시
         }
         await deleteSql.deleteCar(data); // Car table에서 해당 Vin의 차량 정보 삭제 (Vehicle table에 대한 서브 클래스)
         await deleteSql.deleteVehicle(data); // Vehicle table에서 해당 Vin의 차량 정보 삭제 (슈퍼 클래스)
-        res.redirect('/car_delete_admin');
+        res.send("<script>alert('차량이 삭제되었습니다.'); location.href='/car_delete_admin';</script>");
     }
 });
 

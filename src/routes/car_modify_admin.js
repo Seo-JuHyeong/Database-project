@@ -71,7 +71,7 @@ router.post('/', async (req, res) => { // 차량 정보 수정 버튼 클릭 시
         await updateSql.updateVan(data); // 입력된 정보로 Van table 수정 (Car table에 대한 서브 클래스)
     }
 
-    res.redirect('/car_modify_admin');
+    res.send("<script>alert('차량 정보가 수정되었습니다.'); location.href='/car_modify_admin';</script>");
 });
 
 module.exports = router;

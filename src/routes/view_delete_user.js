@@ -39,7 +39,8 @@ router.post('/', async (req, res) => { // 차량 구매 예약 취소 버튼 클
     };
     
     await deleteSql.deleteReservation_user(data); // 해당 차대 번호와 고객으로 등록된 예약 정보를 삭제  
-    res.redirect('/view_delete_user');
+    
+    res.send("<script>alert('예약이 취소되었습니다.'); location.href='/view_delete_user';</script>");
 });
 
 module.exports = router;
